@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>About &mdash; thinking-ape</title>
+<meta name="description" content="The why behind thinking-ape: writing is thinking, and you cannot outsource your understanding."/>
+<link rel="icon" type="image/svg+xml" href="logo.svg"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+:root{--yellow:#fde047;--blue:#93c5fd;--ink:#1a1c1c;--bg:#f9f9f9}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Hanken Grotesk',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+a{color:inherit}
+nav.top{position:sticky;top:0;z-index:50;background:var(--bg);border-bottom:2px solid var(--ink)}
+nav.top .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;padding:16px 24px}
+.logo{background:#fff;border:3px solid var(--ink);box-shadow:2px 2px 0 0 var(--ink);border-radius:8px;padding:6px 14px;font-weight:800;font-size:18px;text-decoration:none}
+.navlinks{display:flex;flex-wrap:wrap;gap:18px;align-items:center;font-weight:700;font-size:14px}
+.navlinks a{text-decoration:none}
+.navlinks a:hover{text-decoration:underline;text-underline-offset:4px}
+.hero{text-align:center;padding:80px 0;border-bottom:2px solid var(--ink)}
+.badge{display:inline-flex;align-items:center;gap:8px;background:var(--yellow);border:2px solid var(--ink);box-shadow:1px 1px 0 0 var(--ink);border-radius:999px;padding:6px 16px;font-weight:700;font-size:14px;margin-bottom:28px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ink);animation:pulse 1.6s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+.hero .lead{font-size:19px;font-weight:700;color:#374151;max-width:640px;margin:0 auto 20px}
+.hero h1{font-size:clamp(38px,7vw,80px);font-weight:800;letter-spacing:-.02em;line-height:1.05;max-width:900px;margin:0 auto}
+.mark{background:var(--yellow);border:2px solid var(--ink);box-shadow:1px 1px 0 0 var(--ink);border-radius:8px;padding:0 10px;display:inline-block;transform:rotate(-1deg)}
+.soon-wrap{display:flex;justify-content:center;padding:70px 24px;border-bottom:2px solid var(--ink)}
+.soon{background:#fff;border:3px solid var(--ink);box-shadow:6px 6px 0 0 var(--ink);border-radius:12px;max-width:460px;width:100%;text-align:center;padding:44px 28px}
+.soon .pill{display:inline-block;background:var(--yellow);border:2px solid var(--ink);border-radius:999px;padding:4px 14px;font-weight:800;font-size:12px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:18px}
+.soon h2{font-size:34px;font-weight:800;letter-spacing:-.02em;margin-bottom:10px}
+.soon p{color:#4b5563;font-weight:600;margin-bottom:22px}
+.btn{display:inline-block;background:var(--yellow);border:3px solid var(--ink);box-shadow:3px 3px 0 0 var(--ink);border-radius:8px;padding:12px 22px;font-weight:800;text-decoration:none;color:var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:none}
+section.block{padding:72px 0;border-bottom:2px solid var(--ink)}
+h2.title{font-size:clamp(30px,5vw,46px);font-weight:800;letter-spacing:-.02em;text-align:center;margin-bottom:14px}
+.subt{text-align:center;font-weight:700;color:#374151;max-width:680px;margin:0 auto 18px}
+.readfull{display:block;text-align:center;font-weight:800;font-size:15px;margin-bottom:40px}
+.readfull a{border-bottom:2px solid var(--ink);text-decoration:none;padding-bottom:1px}
+.readfull a:hover{background:var(--yellow)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:24px}
+.card{background:#fff;border:2px solid var(--ink);box-shadow:4px 4px 0 0 var(--ink);border-radius:12px;padding:24px;text-align:center}
+.num{width:48px;height:48px;border:2px solid var(--ink);box-shadow:1px 1px 0 0 var(--ink);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;margin:0 auto 20px}
+.card h3{font-size:18px;font-weight:800;line-height:1.25}
+footer{background:var(--yellow);border-top:2px solid var(--ink);padding:32px 0}
+footer .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}
+footer .brand{font-weight:800;font-size:20px}
+footer .flinks{display:flex;flex-wrap:wrap;gap:20px;font-weight:700;font-size:14px}
+footer a{text-decoration:none}
+footer a:hover{text-decoration:underline;text-underline-offset:4px}
+/* article pages */
+.phero{max-width:860px;margin:0 auto;padding:40px 24px 8px}
+.phero .kicker{display:inline-flex;align-items:center;gap:8px;background:var(--yellow);border:2px solid var(--ink);box-shadow:1px 1px 0 0 var(--ink);border-radius:999px;padding:6px 16px;font-weight:700;font-size:14px;margin-bottom:22px}
+.phero .kdot{width:8px;height:8px;border-radius:50%;background:var(--ink)}
+.phero h1{font-size:clamp(34px,6vw,54px);font-weight:800;letter-spacing:-.02em;line-height:1.08;margin-bottom:16px}
+.phero .lead{font-size:17px;color:#4b5563;font-weight:500;max-width:680px}
+.phero .bigquote{background:var(--yellow);border:2px solid var(--ink);box-shadow:4px 4px 0 0 var(--ink);border-radius:12px;padding:22px;font-size:clamp(19px,3vw,25px);font-weight:800;line-height:1.3;margin:4px 0 16px}
+.container{max-width:860px;margin:0 auto;padding:0 24px 90px}
+.sec{margin-top:56px}
+.sec>h2{font-size:clamp(23px,4vw,31px);font-weight:800;letter-spacing:-.02em;margin-bottom:16px}
+.sec p{color:#374151;font-size:16px;margin-bottom:14px;line-height:1.7}
+.hl{background:var(--yellow);padding:0 4px;font-weight:800;-webkit-box-decoration-break:clone;box-decoration-break:clone}
+.headrow{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+.headrow .n{width:38px;height:38px;background:var(--yellow);border:2px solid var(--ink);box-shadow:1px 1px 0 0 var(--ink);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;flex:none}
+.headrow h2{margin:0;font-size:clamp(23px,4vw,31px);font-weight:800;letter-spacing:-.02em}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.box{background:#fff;border:2px solid var(--ink);box-shadow:4px 4px 0 0 var(--ink);border-radius:12px;padding:24px}
+.box h3{font-size:18px;font-weight:800;margin-bottom:14px}
+.box h4{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6b7280;margin:18px 0 8px}
+.box ol,.box ul{padding-left:22px;display:flex;flex-direction:column;gap:10px;color:#374151;font-size:15px;line-height:1.6}
+.box ol{list-style:decimal}.box ul{list-style:disc}
+.steprow{display:flex;gap:16px;background:#fff;border:2px solid var(--ink);box-shadow:4px 4px 0 0 var(--ink);border-radius:12px;padding:20px;margin-bottom:16px}
+.steprow .n{width:32px;height:32px;border:2px solid var(--ink);box-shadow:1px 1px 0 0 var(--ink);border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;flex:none}
+.steprow p{margin:0;color:#374151;font-size:16px;line-height:1.6}
+.note{background:var(--yellow);border:2px solid var(--ink);border-radius:8px;padding:8px 12px;font-size:13px;font-weight:700;margin-top:16px}
+.softnote{color:#6b7280;font-size:13px;font-weight:500;margin-top:16px}
+.pills3{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:20px}
+.pill2{background:#fff;border:2px solid var(--ink);box-shadow:1px 1px 0 0 var(--ink);border-radius:8px;padding:12px;text-align:center;font-weight:700}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tagx{background:var(--yellow);border:2px solid var(--ink);border-radius:999px;padding:4px 12px;font-size:13px;font-weight:700}
+.quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.quotecard{background:#fff;border:2px solid var(--ink);box-shadow:1px 1px 0 0 var(--ink);border-radius:8px;padding:14px 16px;font-weight:700;font-size:15px;line-height:1.35}
+.dark{background:var(--ink);color:#fff;border:2px solid var(--ink);box-shadow:6px 6px 0 0 var(--blue);border-radius:12px;padding:36px}
+.dark.center{text-align:center}
+.dark h2{color:#fff;font-size:clamp(22px,3.4vw,30px);margin-bottom:14px;font-weight:800}
+.dark p{color:#d1d5db;margin-bottom:10px}
+.dark p.strong{color:#fff;font-weight:800;font-size:18px}
+.toc{background:#fff;border:2px solid var(--ink);box-shadow:4px 4px 0 0 var(--ink);border-radius:12px;padding:20px;max-width:860px;margin:16px auto 0}
+.toc h4{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#6b7280;margin-bottom:12px}
+.toc ol{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:8px 24px;font-weight:700;font-size:15px}
+.toc a{text-decoration:none}.toc a:hover{text-decoration:underline;text-underline-offset:3px}
+.cta-wrap{margin-top:56px}
+.italic-lead{text-align:center;font-style:italic;color:#6b7280;font-size:17px;margin-bottom:20px}
+@media(max-width:640px){.pills3{grid-template-columns:1fr}section.block{padding:52px 0}.hero{padding:56px 0}}
+</style>
+</head>
+<body><nav class="top"><div class="wrap">
+  <a href="index.html" class="logo">thinking-ape</a>
+  <div class="navlinks">
+    <a href="howitworks.html">How it works</a>
+    <a href="about.html">About</a>
+    <a href="https://x.com/BeaThinkingApe" target="_blank" rel="noopener noreferrer">Twitter</a>
+  </div>
+</div></nav>
+<header class="phero">
+  <div class="kicker"><span class="kdot"></span> Manifesto</div>
+  <h1>About Thinking-Ape</h1>
+  <div class="bigquote">The future belongs to those who know how and why, those who understand the nitty-gritty.</div>
+  <p class="lead">Thinking-Ape was built to aid your thinking.</p>
+</header>
+<div class="container">
+  <div class="sec"><h2>You don't understand it yet</h2>
+    <p>We always think we understand in the moment.</p>
+    <p>While you're studying, everything feels clear. The argument lands. The chapter makes sense. The lecture is obvious. But that clarity is borrowed; it's coming from the page in front of you, not from you. Close the book and try to explain it to someone a week later, and the whole structure collapses.</p>
+    <p>This is the <strong>illusion of competence</strong>. You were recognizing the idea, not building it.</p>
+    <p>Real comprehension only shows up when you can relay an idea so that another person understands it. <strong>If you can't explain it clearly, you don't understand it yet.</strong></p>
+  </div>
+  <div class="sec"><h2>Writing is thinking</h2>
+    <p>Thinking-Ape is built on a single conviction: <span class="hl">writing is thinking.</span></p>
+    <p>If you really want to understand a topic, don't read about it, write about it. The act of explaining connects the dots and commits them to memory in a way that passive reading never will. The struggle is not a side effect of learning. <strong>The struggle <em>is</em> the learning.</strong> When you sit down to say what the main idea was, and the words don't come easily, that difficulty is your brain assembling the thing for the first time.</p>
+    <p>So Thinking-Ape asks you to stop and attempt it.</p>
+  </div>
+  <div class="sec"><h2>How it works</h2>
+    <div class="steprow"><div class="n" style="background:var(--yellow)">1</div><p><strong>Add a source.</strong> A book, a scientific manuscript, a video or audio lecture.</p></div>
+    <div class="steprow"><div class="n" style="background:var(--blue)">2</div><p><strong>Set your writing frequency.</strong> Choose a cadence you can keep up with (weekly, biweekly or monthly) and the grain that fits: every few pages or every chapter for a book, every few timestamp ranges for a video, every few sections for a paper. You choose the rhythm.</p></div>
+    <div class="steprow"><div class="n" style="background:var(--yellow)">3</div><p><strong>Attempt.</strong> At each interval, you write. What was the main idea? What is actually being claimed here, in your own words, to a reader who wasn't there? No summarizing tool does this for you. No autocomplete finishes your sentence. This is the work, and the work is the point.</p></div>
+    <div class="steprow"><div class="n" style="background:var(--blue)">4</div><p><strong>Publish.</strong> The culmination of your attempts becomes a body of writing others can subscribe to and read. Your notes stop being private residue and become essays with a purpose.</p></div>
+    <div class="steprow"><div class="n" style="background:var(--ink);color:#fff">5</div><p><strong>Read others.</strong> Subscribe to attempts on the sources you care about. Vote up the ones that see something no one else saw. Track your own attempts as they accumulate across topics.</p></div>
+  </div>
+  <div class="sec"><h2>Human effort, for human benefit</h2>
+    <p>Thinking-Ape is a tool that requires manual engagement. No magic. No automation. You do the work.</p>
+    <p>That is a deliberate design decision, not a missing feature.</p>
+    <p>In the age of AI, some will forget how to do the simple things. They will stand on the shoulders of giants and forget what the ground looks like. But there will also be those who cherish the work, who insist on knowing the how and the why. Those are the people who will become the next giants.</p>
+    <p style="font-size:18px;font-weight:800;color:var(--ink)">You can outsource your thinking. You cannot outsource your understanding.</p>
+  </div>
+  <div class="sec"><h2>For the technicians, for the thinkers</h2>
+    <p>The polymath dream is alive again. The material has never been more available; what's scarce is the willingness to metabolize it.</p>
+    <p>Thinking-Ape is a learning engine for self-directed learners: people internalizing books, manuscripts and lectures by synthesizing them into publishable essays. Learn by writing. Build an audience as you build your understanding. Produce content with a purpose, and end up with assets instead of highlights you'll never open again.</p>
+  </div>
+  <div class="sec"><div class="dark">
+    <p class="strong" style="font-size:clamp(22px,3.4vw,30px);margin-bottom:14px">AI is not a thinking ape.<br/>So be a thinking ape.</p>
+    <p>Take upon yourself the burden of thinking and understanding. Reject intellectual atrophy.</p>
+    <p class="strong">Don't just read, read with Thinking-Ape, so you can think.</p>
+  </div></div>
+  <div class="sec"><h2>In a line</h2><div class="quotes"><div class="quotecard">Don't just read. Think through.</div><div class="quotecard">Assimilate as you read.</div><div class="quotecard">You can outsource your thinking, but not your understanding.</div><div class="quotecard">Write to think. Share your thoughts.</div><div class="quotecard">AI is not a thinking ape; be a thinking ape.</div><div class="quotecard">In the age of AI, preserve your genius.</div><div class="quotecard">The platform built to help you think.</div><div class="quotecard">All great people read. If you read, you should write.</div><div class="quotecard">Attempt your knowledge. The outcome is content with purpose.</div><div class="quotecard">Human effort, for human benefit.</div><div class="quotecard">No magic. No automation. Do the work.</div><div class="quotecard">Preserve the art of thinking.</div><div class="quotecard">Master knowledge.</div></div></div>
+  <div class="cta-wrap">
+    <p class="italic-lead">What are you learning, or what do you want to learn?</p>
+    <div class="dark center"><h2>Choose a source and make your first attempt.</h2>
+    </div>
+  </div>
+</div>
+<footer><div class="wrap">
+  <div class="brand">thinking-ape</div>
+  <div class="flinks">
+    <a href="howitworks.html">How it works</a>
+    <a href="about.html">About</a>
+    <a href="index.html">Home</a>
+    <a href="https://x.com/BeaThinkingApe" target="_blank" rel="noopener noreferrer">Twitter</a>
+  </div>
+</div></footer>
+</body></html>
