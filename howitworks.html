@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>How it works &mdash; thinking-ape</title>
-<meta name="description" content="The full guide: getting started, adding a source, writing frequency, publishing, subscribing and more."/>
+<title>How it works | thinking-ape</title>
+<meta name="description" content="The full guide: getting started, adding a source, publishing cadence, publishing notes, subscribing and more."/>
 <link rel="icon" type="image/svg+xml" href="logo.svg"/>
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
@@ -110,14 +110,14 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
 <header class="phero">
   <div class="kicker"><span class="kdot"></span> Guide</div>
   <h1>How thinking-ape works</h1>
-  <p class="lead">thinking-ape turns passive consumption into active thinking. You add a source &mdash; a book, video or paper &mdash; pick how often you'll write, then write to <em>think</em> about what you learn, chapter by chapter, timestamp by timestamp, section by section. Others can subscribe and follow along.</p>
+  <p class="lead">thinking-ape is where you document and publish your notes. You add a source, whether a book, video or paper, then set how often you intend to publish and post the notes you wrote on it, chapter by chapter, timestamp by timestamp, section by section. Others can subscribe to that source and read along.</p>
 </header>
 <div class="toc">
   <h4>On this page</h4>
   <ol>
     <li><a href="#getting-started">1. Getting started</a></li>
     <li><a href="#add-source">2. Add a new source</a></li>
-    <li><a href="#frequency">3. Writing frequency &amp; schedule</a></li>
+    <li><a href="#frequency">3. Publishing cadence &amp; schedule</a></li>
     <li><a href="#writing">4. Writing &amp; publishing</a></li>
     <li><a href="#subscribe">5. Subscribing &amp; your feed</a></li>
     <li><a href="#react">6. Upvotes, bookmarks &amp; notifications</a></li>
@@ -128,11 +128,11 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
 <div class="container">
   <div class="sec" id="getting-started">
     <div class="headrow"><div class="n">1</div><h2>Getting started</h2></div>
-    <p>thinking-ape uses passwordless sign-in &mdash; a one-time 6-digit code sent to your email. There's nothing to remember.</p>
+    <p>thinking-ape uses passwordless sign-in, a one-time 6-digit code sent to your email. There's nothing to remember.</p>
     <div class="grid2">
       <div class="box"><h3>Create an account</h3>
-        <ol><li>On the landing page, open the <strong>Sign in / Sign up</strong> box and choose <strong>Sign Up</strong>.</li><li>Enter your <strong>full name</strong>, <strong>email</strong>, and a <strong>username</strong>.</li><li>We email you a <strong>6-digit code</strong> &mdash; enter it to verify.</li><li>You're in. Your session stays signed in on this device.</li></ol>
-        <p class="note">&#9888;&#65039; Your full name and username are permanent &mdash; they can't be changed later, so choose carefully.</p>
+        <ol><li>On the landing page, open the <strong>Sign in / Sign up</strong> box and choose <strong>Sign Up</strong>.</li><li>Enter your <strong>full name</strong>, <strong>email</strong>, and a <strong>username</strong>.</li><li>We email you a <strong>6-digit code</strong>, enter it to verify.</li><li>You're in. Your session stays signed in on this device.</li></ol>
+        <p class="note">&#9888;&#65039; Your full name and username are permanent and can't be changed later, so choose carefully.</p>
       </div>
       <div class="box"><h3>Sign in</h3>
         <ol><li>Open the <strong>Sign in / Sign up</strong> box.</li><li>Enter the <strong>email</strong> you signed up with.</li><li>We send a fresh <strong>6-digit code</strong> to that email.</li><li>Enter the code to sign in.</li></ol>
@@ -142,69 +142,71 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
   </div>
   <div class="sec" id="add-source">
     <div class="headrow"><div class="n">2</div><h2>Add a new source</h2></div>
-    <p>A <strong>source</strong> is the thing you're thinking about: a book, a video, or a paper. Click <strong>New Source</strong> and pick a type. Every type needs a <strong>title</strong>, at least one <strong>author</strong>, a <strong>year</strong>, one or more <strong>subject tags</strong>, and a <strong>writing frequency</strong>.</p>
+    <p>A <strong>source</strong> is the thing you're learning from: a book, a video, or a paper. Every note you write lives under one. Click <strong>Add Source</strong> and pick a type. Every type needs a <strong>title</strong>, at least one <strong>author</strong>, a <strong>year</strong>, one or more <strong>subject tags</strong>, and a <strong>publishing cadence</strong>.</p>
     <div class="box"><h3>&#128214; Book</h3>
-      <ol><li>Choose <strong>Book</strong>.</li><li><strong>Search the book</strong> by title &mdash; results come from Open Library, with covers.</li><li><strong>Select a book</strong> to auto-fill its title, authors, year and cover. Can't find it? Choose the manual option and enter the details by hand.</li><li>Confirm or fill the <strong>required fields</strong> and add <strong>subject tags</strong>.</li><li>Pick a <strong>writing frequency</strong> and create it.</li></ol>
+      <ol><li>Choose <strong>Book</strong>.</li><li><strong>Search the book</strong> by title. Results come from Open Library, with covers.</li><li><strong>Select a book</strong> to auto-fill its title, authors, year and cover. Can't find it? Choose the manual option and enter the details by hand.</li><li>Confirm or fill the <strong>required fields</strong> and add <strong>subject tags</strong>.</li><li>Pick a <strong>publishing cadence</strong> and create it.</li></ol>
       <p class="softnote">You don't upload a table of contents. After the book is created, you add each chapter/section <strong>manually</strong> as you write (see <a href="#writing" style="font-weight:700">Writing &amp; publishing</a>).</p>
     </div>
     <div class="box" style="margin-top:20px"><h3>&#127909; Video</h3>
-      <ol><li>Choose <strong>Video</strong>.</li><li><strong>Paste the video link</strong> and click <strong>Extract</strong> &mdash; the title, authors, year and keywords are pulled in automatically. No result? Enter them by hand.</li><li>Confirm the <strong>required fields</strong> and add <strong>subject tags</strong>.</li><li>Upload a source <strong>thumbnail</strong>.</li><li>Pick a <strong>writing frequency</strong> and create it.</li></ol>
+      <ol><li>Choose <strong>Video</strong>.</li><li><strong>Paste the video link</strong> and click <strong>Extract</strong>. The title, authors, year and keywords are pulled in automatically. No result? Enter them by hand.</li><li>Confirm the <strong>required fields</strong> and add <strong>subject tags</strong>.</li><li>Upload a <strong>video thumbnail</strong>.</li><li>Pick a <strong>publishing cadence</strong> and create it.</li></ol>
     </div>
     <div class="box" style="margin-top:20px"><h3>&#128196; Paper</h3>
-      <ol><li>Choose <strong>Paper</strong>.</li><li><strong>Paste the paper link or DOI</strong> and click <strong>Extract</strong> &mdash; the title, authors, year, abstract and keywords are pulled in automatically. No result? Enter them by hand.</li><li>Confirm the <strong>required fields</strong> and add <strong>subject tags</strong>.</li><li>Upload a source <strong>thumbnail</strong>.</li><li>Pick a <strong>writing frequency</strong> and create it.</li></ol>
+      <ol><li>Choose <strong>Paper</strong>.</li><li><strong>Paste the paper link or DOI</strong> and click <strong>Extract</strong>. The title, authors, year, abstract and keywords are pulled in automatically. No result? Enter them by hand.</li><li>Confirm the <strong>required fields</strong> and add <strong>subject tags</strong>.</li><li>Upload a <strong>paper thumbnail</strong>.</li><li>Pick a <strong>publishing cadence</strong> and create it.</li></ol>
     </div>
   </div>
   <div class="sec" id="frequency">
-    <div class="headrow"><div class="n">3</div><h2>Writing frequency &amp; schedule</h2></div>
-    <p>When you create a source you choose how often you intend to write about it. thinking-ape then tracks a <strong>next-post-due</strong> date and keeps you honest.</p>
+    <div class="headrow"><div class="n">3</div><h2>Publishing cadence &amp; schedule</h2></div>
+    <p>When you add a source, you choose how often you intend to publish notes on it. thinking-ape tracks a <strong>next-post-due</strong> date, the way a publication tracks its next issue.</p>
     <div class="pills3"><div class="pill2">Weekly</div><div class="pill2">Biweekly</div><div class="pill2">Monthly</div></div>
     <div class="grid2">
-      <div class="box"><h3>Staying on schedule</h3><ul><li>Each source shows its <strong>next post due</strong> date.</li><li>We send you a <strong>reminder</strong> before a deadline.</li><li>Publish a post and the schedule rolls forward to the next date.</li></ul></div>
-      <div class="box"><h3>If you miss a deadline</h3><ul><li>The source is flagged as <strong>missed</strong> and you get a heads-up email.</li><li>A post published after its deadline is marked <strong>late</strong> &mdash; late posts <strong>can't be upvoted</strong>.</li><li>Need a break? You can <strong>pause</strong> a source until a date you choose.</li></ul></div>
+      <div class="box"><h3>Staying on schedule</h3><ul><li>Each source shows its <strong>next post due</strong> date.</li><li>We send you a <strong>reminder</strong> before a due date.</li><li>Publish a note and the schedule rolls forward to the next date.</li></ul></div>
+      <div class="box"><h3>If you miss a date</h3><ul><li>The source is flagged as <strong>missed</strong> and you get a heads-up email.</li><li>A note published after its due date is marked <strong>late</strong>, and late notes <strong>can't be upvoted</strong>.</li><li>Need a break? You can <strong>pause</strong> a source until a date you choose.</li></ul></div>
     </div>
   </div>
   <div class="sec" id="writing">
     <div class="headrow"><div class="n">4</div><h2>Writing &amp; publishing</h2></div>
-    <p>This is the heart of it: writing to <em>think</em>. Open one of your sources and add an entry for whatever you just finished &mdash; a chapter, a timestamp, a section.</p>
-    <div class="box"><h3>Write a post</h3>
-      <ol><li>Open your source, or click <strong>write/think</strong> and pick the source.</li><li>Give the entry a <strong>title</strong> &mdash; e.g. &ldquo;Chapter 3&rdquo;, &ldquo;Timestamp 12:40&rdquo;, or a section name.</li><li>Write your thinking in the <strong>editor</strong> (rich text).</li><li>Optionally pick a reading <strong>format/theme</strong>.</li><li><strong>Publish</strong> &mdash; it's added to the source and pushed to your subscribers' feeds.</li></ol>
-      <h4>Post formats</h4>
+    <p>Open a source and add a note for whatever you just finished, a chapter, a timestamp, a section.</p>
+    <p>There's no summarizer and no autocomplete. What goes in is what you wrote.</p>
+    <div class="box"><h3>Publish a note</h3>
+      <ol><li>Open your source, or click <strong>Publish</strong> and pick the source.</li><li>Give the note a <strong>title</strong>, e.g. &ldquo;Chapter 3&rdquo;, &ldquo;Timestamp 12:40&rdquo;, or a section name.</li><li>Put your notes into the <strong>editor</strong> (rich text).</li><li>Optionally pick a reading <strong>format/theme</strong>.</li><li><strong>Publish</strong>, and it's added to the source and pushed to your subscribers' feeds.</li></ol>
+      <h4>Note formats</h4>
       <div class="tags"><span class="tagx">Essay</span><span class="tagx">Poem</span><span class="tagx">Story</span><span class="tagx">Letter</span><span class="tagx">Documentation</span></div>
-      <p class="note">&#9989; When you've written everything you meant to, hit <strong>Finish</strong> on the source to mark it complete (100%).</p>
+      <p class="note">&#9989; When you've published everything you meant to, hit <strong>Finish</strong> on the source to mark it complete (100%).</p>
     </div>
   </div>
   <div class="sec" id="subscribe">
     <div class="headrow"><div class="n">5</div><h2>Subscribing &amp; your feed</h2></div>
     <div class="grid2">
-      <div class="box"><h3>Follow other thinkers</h3><ul><li><strong>Subscribe</strong> to any source to follow along.</li><li>New posts from your subscriptions collect in your <strong>feed</strong>.</li><li><strong>Unsubscribe</strong> anytime.</li></ul></div>
-      <div class="box"><h3>Discover</h3><ul><li>Use <strong>search</strong> to find people, sources and topics.</li><li>Browse a user's <strong>profile</strong> to see everything they're thinking about.</li></ul></div>
+      <div class="box"><h3>Follow a source</h3><ul><li><strong>Subscribe</strong> to any source to read the notes as they're published.</li><li>New notes from your subscriptions collect in your <strong>Library</strong>.</li><li><strong>Unsubscribe</strong> anytime.</li></ul></div>
+      <div class="box"><h3>Discover</h3><ul><li>Use <strong>search</strong> to find people, sources and topics.</li><li>Browse a user's <strong>profile</strong> to see every source they're documenting.</li></ul></div>
     </div>
   </div>
   <div class="sec" id="react">
     <div class="headrow"><div class="n">6</div><h2>Upvotes, bookmarks &amp; notifications</h2></div>
     <div class="grid3">
-      <div class="box"><h3>Upvote</h3><p style="margin:0;color:#374151;font-size:15px">Show appreciation for a post you found sharp. (Posts published late can't be upvoted.)</p></div>
-      <div class="box"><h3>Bookmark</h3><p style="margin:0;color:#374151;font-size:15px">Save any post to your bookmarks to come back to it later.</p></div>
-      <div class="box"><h3>Notifications</h3><p style="margin:0;color:#374151;font-size:15px">Get notified about new posts from your subscriptions, new subscribers, upvotes and bookmarks &mdash; in real time.</p></div>
+      <div class="box"><h3>Upvote</h3><p style="margin:0;color:#374151;font-size:15px">Show appreciation for a note you found sharp. (Notes published late can't be upvoted.)</p></div>
+      <div class="box"><h3>Bookmark</h3><p style="margin:0;color:#374151;font-size:15px">Save any note to your bookmarks to come back to it later.</p></div>
+      <div class="box"><h3>Notifications</h3><p style="margin:0;color:#374151;font-size:15px">Get notified about new notes from your subscriptions, new subscribers, upvotes and bookmarks, in real time.</p></div>
     </div>
   </div>
   <div class="sec" id="account">
     <div class="headrow"><div class="n">7</div><h2>Your profile &amp; account</h2></div>
     <div class="grid2">
-      <div class="box"><h3>Your profile</h3><ul><li>Your public profile shows your sources and posts.</li><li>You can edit your profile picture, bio and location.</li><li>Edit or delete your own posts and sources anytime.</li></ul></div>
-      <div class="box"><h3>The permanent bits</h3><ul><li>Your <strong>username</strong> and <strong>full name</strong> are set once at sign-up and <strong>cannot be changed</strong>.</li><li>Sign-in is by email code &mdash; keep access to your email.</li></ul></div>
+      <div class="box"><h3>Your profile</h3><ul><li>Your public profile shows your sources and notes.</li><li>You can edit your profile picture, bio and location.</li><li>Edit or delete your own notes and sources anytime.</li></ul></div>
+      <div class="box"><h3>The permanent bits</h3><ul><li>Your <strong>username</strong> and <strong>full name</strong> are set once at sign-up and <strong>cannot be changed</strong>.</li><li>Sign-in is by email code, so keep access to your email.</li></ul></div>
     </div>
   </div>
   <div class="sec" id="faq">
     <div class="headrow"><div class="n">8</div><h2>Good to know</h2></div>
-    <div class="box" style="margin-bottom:16px"><h3>Do I have to finish a source?</h3><p style="margin:0;color:#374151;font-size:15px">No. Write at your own pace on the frequency you chose. When you're done, hit Finish to mark it complete &mdash; or just stop.</p></div>
-    <div class="box" style="margin-bottom:16px"><h3>Can I write on my phone?</h3><p style="margin:0;color:#374151;font-size:15px">You can read and browse everywhere. Writing a post is best on a larger screen &mdash; the editor prompts you to switch to desktop on mobile.</p></div>
+    <div class="box" style="margin-bottom:16px"><h3>Do I have to finish a source?</h3><p style="margin:0;color:#374151;font-size:15px">No. Publish at the cadence you chose, at your own pace. When you're done, hit Finish to mark it complete, or just stop.</p></div>
+    <div class="box" style="margin-bottom:16px"><h3>Does thinking-ape summarize or write anything for me?</h3><p style="margin:0;color:#374151;font-size:15px">No, and it won't. Metadata for books, videos and papers is retrieved automatically. The notes are entirely yours.</p></div>
+    <div class="box" style="margin-bottom:16px"><h3>Can I publish from my phone?</h3><p style="margin:0;color:#374151;font-size:15px">You can read and browse everywhere. Publishing a note is best on a larger screen, and the editor prompts you to switch to desktop on mobile.</p></div>
     <div class="box" style="margin-bottom:16px"><h3>What if the extractor can't read my video or paper link?</h3><p style="margin:0;color:#374151;font-size:15px">Just choose the manual option and type the title, authors and year yourself.</p></div>
-    <div class="box"><h3>What happens if I miss my writing deadline?</h3><p style="margin:0;color:#374151;font-size:15px">The source is flagged, you get an email, and any post you publish afterward is marked late (and can't be upvoted). Pause the source if you need a real break.</p></div>
+    <div class="box"><h3>What happens if I miss a due date?</h3><p style="margin:0;color:#374151;font-size:15px">The source is flagged, you get an email, and any note you publish afterward is marked late (and can't be upvoted). Pause the source if you need a real break.</p></div>
   </div>
   <div class="cta-wrap"><div class="dark center">
-    <h2>Ready to think?</h2>
-    <p>Add your first source and write your first post today.</p>
+    <h2>Ready to publish?</h2>
+    <p>Add your first source and publish your first note today.</p>
   </div></div>
 </div>
 <footer><div class="wrap">
