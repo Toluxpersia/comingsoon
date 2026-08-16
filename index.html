@@ -99,43 +99,105 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
 .bg-logo{position:fixed;inset:0;z-index:-1;display:flex;align-items:center;justify-content:center;pointer-events:none;overflow:hidden}
 .bg-logo img{width:min(800px,120vw);height:auto;max-width:none;filter:blur(24px);opacity:.7;transform:scale(1.05)}
 @media(max-width:640px){.pills3{grid-template-columns:1fr}section.block{padding:52px 0}.hero{padding:56px 0}}
+
+/* step cards on the landing page now carry a supporting line under the title */
+.card p{font-size:15px;color:#374151;line-height:1.6;margin-top:6px}
+/* "Not a notes app. Not a blog." cards */
+.diffs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.diff{background:#fff;border:2px solid var(--ink);box-shadow:4px 4px 0 0 var(--ink);border-radius:12px;padding:24px}
+.diff h3{font-size:20px;font-weight:800;line-height:1.25;margin-bottom:8px}
+.diff p{font-size:15px;color:#374151;line-height:1.6}
+/* rolling note-app band: a stack of fixed-height rows translated up one row at a
+   time, first name repeated at the end so the wrap is seamless. Row height is in
+   em so it tracks the font size at every breakpoint. */
+.rollband{text-align:center;padding:44px 0}
+.rollband p{font-size:clamp(24px,4vw,38px);font-weight:800;letter-spacing:-.02em;line-height:1.25;
+  display:flex;flex-wrap:wrap;align-items:baseline;justify-content:center;gap:4px 12px;margin:0}
+.na-roll{display:inline-block;height:1.4em;line-height:1.4em;overflow:hidden;vertical-align:bottom}
+.na-roll-track{display:block;animation:na-roll 22s cubic-bezier(.7,0,.2,1) infinite}
+.na-roll-item{display:block;height:1.4em;line-height:1.4em;white-space:nowrap;font-weight:800;color:#000;
+  box-shadow:inset 0 -0.32em 0 var(--yellow)}
+@keyframes na-roll{
+  0%,7%{transform:translateY(0)}
+  10%,17%{transform:translateY(-1.4em)}
+  20%,27%{transform:translateY(-2.8em)}
+  30%,37%{transform:translateY(-4.2em)}
+  40%,47%{transform:translateY(-5.6em)}
+  50%,57%{transform:translateY(-7em)}
+  60%,67%{transform:translateY(-8.4em)}
+  70%,77%{transform:translateY(-9.8em)}
+  80%,87%{transform:translateY(-11.2em)}
+  90%,97%{transform:translateY(-12.6em)}
+  100%{transform:translateY(-14em)}
+}
+@media (prefers-reduced-motion: reduce){.na-roll-track{animation:none}}
 </style>
 </head>
 <body>
 <div class="bg-logo"><img src="logo.svg" alt=""/></div><nav class="top"><div class="wrap">
   <a href="index.html" class="logo">thinking-ape</a>
   <div class="navlinks">
-    <a href="howitworks.html">How it works</a>
     <a href="about.html">About</a>
+    <a href="howitworks.html">How it works</a>
     <a href="https://x.com/BeaThinkingApe" target="_blank" rel="noopener noreferrer">Twitter</a>
   </div>
 </div></nav>
 <section class="hero" id="top"><div class="wrap">
   <div class="badge"><span class="dot"></span> Document &amp; Share</div>
-  <h1>Document and share <span class="mark">your notes</span> from the books, videos or papers you study.</h1>
-  <p class="lead" style="margin:26px auto 0;color:#1f2937">A platform where you document your journey through books, videos or papers. Create documentation others can subscribe to and read.</p>
+  <h1>Document and share <span class="mark">your study notes</span> from books, videos or papers.</h1>
+  <p class="lead" style="margin:26px auto 0;color:#1f2937">A platform where you document your journey through books, videos or papers. Your notes become documentation others can subscribe to and read.</p>
 </div></section>
 <div class="soon-wrap"><div class="soon">
   <div class="pill">Launching soon</div>
   <h2>Coming Soon</h2>
-  <p style="margin-bottom:0">We’re putting the finishing touches on thinking-ape.</p>
+  <p style="margin-bottom:0">We&rsquo;re putting the finishing touches on thinking-ape.</p>
 </div></div>
+<section class="rollband"><div class="wrap">
+  <p>
+    <span>Your notes start in</span>
+    <span class="na-roll">
+      <span class="na-roll-track">
+        <span class="na-roll-item">Obsidian</span>
+        <span class="na-roll-item">Notion</span>
+        <span class="na-roll-item">Apple Notes</span>
+        <span class="na-roll-item">Logseq</span>
+        <span class="na-roll-item">Roam Research</span>
+        <span class="na-roll-item">Evernote</span>
+        <span class="na-roll-item">Bear</span>
+        <span class="na-roll-item">OneNote</span>
+        <span class="na-roll-item">Craft</span>
+        <span class="na-roll-item">Google Keep</span>
+        <span class="na-roll-item">Obsidian</span>
+      </span>
+    </span>
+    <span>They end up documented and shared here.</span>
+  </p>
+</div></section>
 <section class="block"><div class="wrap">
   <h2 class="title">How it works</h2>
-  <p class="subt">Everything here is built around one unit: a source, and the notes you wrote from it.</p>
+  <p class="subt">How to document: Everything here is built around one unit, a source and the notes you wrote from it.</p>
   <p class="readfull"><a href="howitworks.html">Read the full guide &rarr;</a></p>
   <div class="steps">
-    <div class="card"><div class="num" style="background:var(--yellow)">1</div><h3>Add the source</h3></div>
-    <div class="card"><div class="num" style="background:var(--blue)">2</div><h3>Set a publishing cadence</h3></div>
-    <div class="card"><div class="num" style="background:var(--yellow)">3</div><h3>Publish your notes</h3></div>
-    <div class="card"><div class="num" style="background:var(--ink);color:#fff">4</div><h3>Build an audience</h3></div>
+    <div class="card"><div class="num" style="background:var(--yellow)">1</div><h3>Add the source</h3><p>The book, video or paper you're learning from.</p></div>
+    <div class="card"><div class="num" style="background:var(--blue)">2</div><h3>Set a publishing cadence</h3><p>How often you intend to post notes on it. Weekly, biweekly or monthly.</p></div>
+    <div class="card"><div class="num" style="background:var(--yellow)">3</div><h3>Publish your notes</h3><p>A chapter, a timestamp, a section at a time.</p></div>
+    <div class="card"><div class="num" style="background:var(--ink);color:#fff">4</div><h3>Build an audience</h3><p>Others subscribe to the source and read along.</p></div>
+  </div>
+</div></section>
+<section class="block"><div class="wrap">
+  <h2 class="title" style="margin-bottom:40px">Not a notes app. Not a blog.</h2>
+  <div class="diffs">
+    <div class="diff"><h3>Organized by source, not by folder</h3><p>Your notes live under the book, video or paper they came from. Add a book, paper or video and we retrieve the info.</p></div>
+    <div class="diff"><h3>Public by default</h3><p>Private notes rot in an app you stop opening. Notes written for a reader get written properly.</p></div>
+    <div class="diff"><h3>People subscribe to a source, not to you</h3><p>Someone working through the same book, video or paper can follow your notes on it specifically.</p></div>
+    <div class="diff"><h3>No feed to fall into</h3><p>Nothing is pushed at you.</p></div>
   </div>
 </div></section>
 <footer><div class="wrap">
   <div class="brand">thinking-ape</div>
   <div class="flinks">
-    <a href="howitworks.html">How it works</a>
     <a href="about.html">About</a>
+    <a href="howitworks.html">How it works</a>
     <a href="index.html">Home</a>
     <a href="https://x.com/BeaThinkingApe" target="_blank" rel="noopener noreferrer">Twitter</a>
   </div>

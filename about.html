@@ -96,26 +96,29 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
 .toc a{text-decoration:none}.toc a:hover{text-decoration:underline;text-underline-offset:3px}
 .cta-wrap{margin-top:56px}
 .italic-lead{text-align:center;font-style:italic;color:#6b7280;font-size:17px;margin-bottom:20px}
+.bg-logo{position:fixed;inset:0;z-index:-1;display:flex;align-items:center;justify-content:center;pointer-events:none;overflow:hidden}
+.bg-logo img{width:min(800px,120vw);height:auto;max-width:none;filter:blur(24px);opacity:.7;transform:scale(1.05)}
 @media(max-width:640px){.pills3{grid-template-columns:1fr}section.block{padding:52px 0}.hero{padding:56px 0}}
 </style>
 </head>
-<body><nav class="top"><div class="wrap">
+<body>
+<div class="bg-logo"><img src="logo.svg" alt=""/></div><nav class="top"><div class="wrap">
   <a href="index.html" class="logo">thinking-ape</a>
   <div class="navlinks">
-    <a href="howitworks.html">How it works</a>
     <a href="about.html">About</a>
+    <a href="howitworks.html">How it works</a>
     <a href="https://x.com/BeaThinkingApe" target="_blank" rel="noopener noreferrer">Twitter</a>
   </div>
 </div></nav>
 <header class="phero">
   <div class="kicker"><span class="kdot"></span> Manifesto</div>
   <h1>About thinking-ape</h1>
-  <div class="bigquote">Writing is thinking. So we built a place for the writing.</div>
+  <div class="bigquote">Writing is thinking. So we built a place for your thoughts.</div>
   <p class="lead">This is a platform for documenting and sharing your notes.</p>
 </header>
 <div class="container">
   <div class="sec"><h2>What this is</h2>
-    <p>thinking-ape is where you publish the notes you write as you learn from a book, a video, or a paper.</p>
+    <p>thinking-ape is where you publish the notes you write as you learn from a book, a video, or a paper (source).</p>
     <p>You add the source. You publish your notes on it, a chapter, a timestamp, a section at a time. Other people can subscribe to that source and read along.</p>
   </div>
   <div class="sec"><h2>Writing is thinking</h2>
@@ -150,8 +153,7 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
   <div class="sec"><h2>In a line</h2><div class="quotes"><div class="quotecard">Document what you learn.</div><div class="quotecard">Writing is thinking. This is where the writing goes.</div><div class="quotecard">Notes worth publishing.</div><div class="quotecard">If you read, you should write.</div><div class="quotecard">Your notes, organized by what you read them in.</div><div class="quotecard">Private notes rot. Publish them.</div><div class="quotecard">Write for a reader and you'll write it properly.</div><div class="quotecard">You can outsource your thinking, but not your understanding.</div><div class="quotecard">AI is not a thinking ape; be a thinking ape.</div><div class="quotecard">Human effort, for human benefit.</div><div class="quotecard">A record of what you actually understood.</div><div class="quotecard">Read. Write. Publish.</div></div></div>
   <div class="cta-wrap">
     <p class="italic-lead">What are you learning right now?</p>
-    <div class="dark center"><h2>Document your first note.</h2>
-    </div>
+    <div class="dark center"><h2 style="margin-bottom:0">Document your first note.</h2></div>
   </div>
 </div>
 <footer><div class="wrap">

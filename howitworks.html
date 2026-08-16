@@ -96,21 +96,24 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
 .toc a{text-decoration:none}.toc a:hover{text-decoration:underline;text-underline-offset:3px}
 .cta-wrap{margin-top:56px}
 .italic-lead{text-align:center;font-style:italic;color:#6b7280;font-size:17px;margin-bottom:20px}
+.bg-logo{position:fixed;inset:0;z-index:-1;display:flex;align-items:center;justify-content:center;pointer-events:none;overflow:hidden}
+.bg-logo img{width:min(800px,120vw);height:auto;max-width:none;filter:blur(24px);opacity:.7;transform:scale(1.05)}
 @media(max-width:640px){.pills3{grid-template-columns:1fr}section.block{padding:52px 0}.hero{padding:56px 0}}
 </style>
 </head>
-<body><nav class="top"><div class="wrap">
+<body>
+<div class="bg-logo"><img src="logo.svg" alt=""/></div><nav class="top"><div class="wrap">
   <a href="index.html" class="logo">thinking-ape</a>
   <div class="navlinks">
-    <a href="howitworks.html">How it works</a>
     <a href="about.html">About</a>
+    <a href="howitworks.html">How it works</a>
     <a href="https://x.com/BeaThinkingApe" target="_blank" rel="noopener noreferrer">Twitter</a>
   </div>
 </div></nav>
 <header class="phero">
   <div class="kicker"><span class="kdot"></span> Guide</div>
   <h1>How thinking-ape works</h1>
-  <p class="lead">thinking-ape is where you document and publish your notes. You add a source, whether a book, video or paper, then set how often you intend to publish and post the notes you wrote on it, chapter by chapter, timestamp by timestamp, section by section. Others can subscribe to that source and read along.</p>
+  <p class="lead">thinking-ape is where you document and publish your notes. To document, you add a source, whether a book, video or paper, then set how often you intend to publish the notes you wrote on it, chapter by chapter, timestamp by timestamp, section by section. Others can subscribe to that source and read along.</p>
 </header>
 <div class="toc">
   <h4>On this page</h4>
@@ -120,9 +123,10 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
     <li><a href="#frequency">3. Publishing cadence &amp; schedule</a></li>
     <li><a href="#writing">4. Writing &amp; publishing</a></li>
     <li><a href="#subscribe">5. Subscribing &amp; your Library</a></li>
-    <li><a href="#react">6. Upvotes, bookmarks &amp; notifications</a></li>
-    <li><a href="#account">7. Your profile &amp; account</a></li>
-    <li><a href="#faq">8. Good to know</a></li>
+    <li><a href="#search">6. Finding things with search</a></li>
+    <li><a href="#react">7. Upvotes, bookmarks &amp; notifications</a></li>
+    <li><a href="#account">8. Your profile &amp; account</a></li>
+    <li><a href="#faq">9. Good to know</a></li>
   </ol>
 </div>
 <div class="container">
@@ -139,6 +143,10 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
         <p class="softnote">For your privacy, the code screen looks the same whether or not an account exists for that email.</p>
       </div>
     </div>
+  </div>
+  <div class="sec" id="how-to-document" style="margin-bottom:-24px">
+    <h2 style="font-size:clamp(26px,4.5vw,36px)">How to document</h2>
+    <p>Everything here is built around one unit: a source, and the notes you wrote from it.</p>
   </div>
   <div class="sec" id="add-source">
     <div class="headrow"><div class="n">2</div><h2>Add a new source</h2></div>
@@ -181,8 +189,18 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
       <div class="box"><h3>Discover</h3><ul><li>Use <strong>search</strong> to find people, sources and topics.</li><li>Browse a user's <strong>profile</strong> to see every source they're documenting.</li></ul></div>
     </div>
   </div>
+  <div class="sec" id="search">
+    <div class="headrow"><div class="n">6</div><h2>Finding things with search</h2></div>
+    <p>thinking-ape has <strong>no feed built to keep you scrolling</strong>. Nothing is pushed at you and there's no endless timeline to fall into. You find what you want, when you want it, strictly by <strong>searching</strong>.</p>
+    <div class="grid3">
+      <div class="box"><h3>&#128100; People</h3><p style="margin:0;color:#374151;font-size:15px">Find someone by name or username, then browse their profile to see every source they're documenting.</p></div>
+      <div class="box"><h3>&#127991;&#65039; Topics</h3><p style="margin:0;color:#374151;font-size:15px">Search a subject or tag to surface the sources and notes written around it.</p></div>
+      <div class="box"><h3>&#128218; Sources</h3><p style="margin:0;color:#374151;font-size:15px">Look up a specific book, video or paper by title to jump straight to the notes written on it.</p></div>
+    </div>
+    <p class="note">&#128270; The only things that arrive on their own are notes from sources you chose to subscribe to. Everything else, you go and find.</p>
+  </div>
   <div class="sec" id="react">
-    <div class="headrow"><div class="n">6</div><h2>Upvotes, bookmarks &amp; notifications</h2></div>
+    <div class="headrow"><div class="n">7</div><h2>Upvotes, bookmarks &amp; notifications</h2></div>
     <div class="grid3">
       <div class="box"><h3>Upvote</h3><p style="margin:0;color:#374151;font-size:15px">Show appreciation for a note you found sharp. (Notes published late can't be upvoted.)</p></div>
       <div class="box"><h3>Bookmark</h3><p style="margin:0;color:#374151;font-size:15px">Save any note to your bookmarks to come back to it later.</p></div>
@@ -190,14 +208,14 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
     </div>
   </div>
   <div class="sec" id="account">
-    <div class="headrow"><div class="n">7</div><h2>Your profile &amp; account</h2></div>
+    <div class="headrow"><div class="n">8</div><h2>Your profile &amp; account</h2></div>
     <div class="grid2">
       <div class="box"><h3>Your profile</h3><ul><li>Your public profile shows your sources and notes.</li><li>You can edit your profile picture, bio and location.</li><li>Edit or delete your own notes and sources anytime.</li></ul></div>
       <div class="box"><h3>The permanent bits</h3><ul><li>Your <strong>username</strong> and <strong>full name</strong> are set once at sign-up and <strong>cannot be changed</strong>.</li><li>Sign-in is by email code, so keep access to your email.</li></ul></div>
     </div>
   </div>
   <div class="sec" id="faq">
-    <div class="headrow"><div class="n">8</div><h2>Good to know</h2></div>
+    <div class="headrow"><div class="n">9</div><h2>Good to know</h2></div>
     <div class="box" style="margin-bottom:16px"><h3>Do I have to finish a source?</h3><p style="margin:0;color:#374151;font-size:15px">No. Publish at the cadence you chose, at your own pace. When you're done, hit Finish to mark it complete, or just stop.</p></div>
     <div class="box" style="margin-bottom:16px"><h3>Does thinking-ape summarize or write anything for me?</h3><p style="margin:0;color:#374151;font-size:15px">No, and it won't. Metadata for books, videos and papers is retrieved automatically. The notes are entirely yours.</p></div>
     <div class="box" style="margin-bottom:16px"><h3>Can I publish from my phone?</h3><p style="margin:0;color:#374151;font-size:15px">You can read and browse everywhere. Publishing a note is best on a larger screen, and the editor prompts you to switch to desktop on mobile.</p></div>
@@ -206,14 +224,14 @@ footer a:hover{text-decoration:underline;text-underline-offset:4px}
   </div>
   <div class="cta-wrap"><div class="dark center">
     <h2>Ready to publish?</h2>
-    <p>Add your first source and publish your first note today.</p>
+    <p style="margin-bottom:0">Add your first source and publish your first note today.</p>
   </div></div>
 </div>
 <footer><div class="wrap">
   <div class="brand">thinking-ape</div>
   <div class="flinks">
-    <a href="howitworks.html">How it works</a>
     <a href="about.html">About</a>
+    <a href="howitworks.html">How it works</a>
     <a href="index.html">Home</a>
     <a href="https://x.com/BeaThinkingApe" target="_blank" rel="noopener noreferrer">Twitter</a>
   </div>
